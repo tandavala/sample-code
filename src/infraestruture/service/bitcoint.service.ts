@@ -1,8 +1,8 @@
 import PaymentAntiCurreuption from "../../domain/anti-curruption/payment.interface";
 
 export default class BitCointPayment implements PaymentAntiCurreuption {
-  constructor(payalConfig: any) {
-    // Configurar o paypal e se conectar
+  constructor(bitcoinConfig: any) {
+    // Configurar o bicoin e se conectar
   }
   checkAmount(toPay: number, givenValue: number): boolean {
     return toPay == givenValue;
