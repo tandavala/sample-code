@@ -2,7 +2,7 @@ import PaymentAntiCurreuption from "../../domain/anti-curruption/payment.interfa
 
 export default class StripePayment implements PaymentAntiCurreuption {
   constructor(stripeConfig: any) {
-    // Configurar o paypal e se conectar
+    // Configurar o stripe e se conectar
   }
   checkAmount(toPay: number, givenValue: number): boolean {
     return toPay == givenValue;
