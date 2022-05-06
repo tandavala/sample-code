@@ -22,20 +22,22 @@ const payPalPayment = new PaypalPayment(payPalConf);
 console.log(payPalPayment.addPayment(order.totalToPay(), 30));
 
 // Fazendo o pagamento usando o stripe
-const stripePalConf = {
+const stripeConf = {
   user: "stripe.user",
   pass: "stripe.pass",
 };
 
-const stripePayment = new StripePayment(stripePalConf);
+const stripePayment = new StripePayment(stripeConf);
 console.log(stripePayment.addPayment(order.totalToPay(), 30));
 
 // Fazendo Pagamento usando bitcoin
 
 const whateverBitCointGateWayConfig = {
-  user: "stripe.user",
-  pass: "stripe.pass",
+  user: "btn.user",
+  pass: "btn.pass",
 };
 
-const whateverBitCointGateWay = new BitCointPayment(stripePalConf);
+const whateverBitCointGateWay = new BitCointPayment(
+  whateverBitCointGateWayConfig
+);
 console.log(whateverBitCointGateWay.addPayment(order.totalToPay(), 30));
